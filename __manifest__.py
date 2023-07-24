@@ -2,7 +2,7 @@
 
 {
     'name': 'Sale order requested by ',
-    'version': '1.0.1',
+    'version': '1.0.1.1',
     'author':'Soft-integration',
     'category': 'Sales/Sales',
     'description': "",
@@ -10,7 +10,8 @@
         'sale'
     ],
     'data': [
-        'views/sale_views.xml'
+        'views/sale_views.xml',
+        'views/account_move_views.xml'
     ],
     'installable': True,
     'application': False,
