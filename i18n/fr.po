@@ -6,14 +6,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-24 09:58+0000\n"
-"PO-Revision-Date: 2023-07-24 09:58+0000\n"
+"POT-Creation-Date: 2023-07-24 10:30+0000\n"
+"PO-Revision-Date: 2023-07-24 10:30+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: sale_order_requested_by
+#: model_terms:ir.ui.view,arch_db:sale_order_requested_by.report_invoice_document_inherit
+msgid "<strong>Requested by:</strong>"
+msgstr "<strong>Demandée par:</strong>"
 
 #. module: sale_order_requested_by
 #: model:ir.model,name:sale_order_requested_by.model_account_move
@@ -26,7 +31,12 @@ msgstr "Pièce comptable"
 #: model:ir.model.fields,field_description:sale_order_requested_by.field_account_payment__requested_by_id
 #: model:ir.model.fields,field_description:sale_order_requested_by.field_sale_order__requested_by_id
 msgid "Requested by"
-msgstr "Demandé par"
+msgstr "Demandée par"
+
+#. module: sale_order_requested_by
+#: model:ir.model,name:sale_order_requested_by.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "Facture de paiement d'avance"
 
 #. module: sale_order_requested_by
 #: model:ir.model,name:sale_order_requested_by.model_sale_order

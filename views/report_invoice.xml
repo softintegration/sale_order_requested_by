@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <template id="report_invoice_document_inherit" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[@id='informations']" position="inside">
+            <div class="col-auto col-3 mw-100 mb-2" t-if="o.requested_by_id" name="requested_by_id">
+                <strong>Requested by:</strong>
+                <p class="m-0" t-field="o.requested_by_id"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>
