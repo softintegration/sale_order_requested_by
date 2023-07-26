@@ -2,7 +2,7 @@
 
 {
     'name': 'Sale order requested by ',
-    'version': '1.0.1.2',
+    'version': '1.0.1.3',
     'author':'Soft-integration',
     'category': 'Sales/Sales',
     'description': "",

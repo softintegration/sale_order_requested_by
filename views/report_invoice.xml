@@ -5,7 +5,7 @@
         <xpath expr="//div[@id='informations']" position="inside">
             <div class="col-auto col-3 mw-100 mb-2" t-if="o.requested_by_id" name="requested_by_id">
                 <strong>Requested by:</strong>
-                <p class="m-0" t-field="o.requested_by_id"/>
+                <p class="m-0" t-field="o.requested_by_id.name"/>
             </div>
         </xpath>
     </template>
