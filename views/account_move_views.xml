@@ -9,9 +9,9 @@
                 <xpath expr="//field[@name='partner_id']" position="after">
                     <field name="requested_by_id"
                            attrs="{'invisible':[('partner_id','=',False)]}"
-                           domain="[('parent_id','=',partner_id)]"
+                           domain="[('parent_id','=',partner_id),('type','=','contact')]"
                            options="{'no_create_edit':True}"
-                           context="{'default_parent_id':partner_id}"/>
+                           context="{'default_parent_id':partner_id,'default_type':'contact'}"/>
                 </xpath>
             </field>
         </record>
