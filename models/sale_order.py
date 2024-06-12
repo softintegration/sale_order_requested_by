@@ -8,8 +8,7 @@ class SaleOrder(models.Model):
     _inherit = "sale.order"
 
     requested_by_id = fields.Many2one('res.partner', 'Requested by', readonly=True, copy=False,
-                                      states={'draft': [('readonly', False)], 'sent': [('readonly', False)]},
-                                      ondelete='restrict')
+                                      states={'draft': [('readonly', False)], 'sent': [('readonly', False)]},index=True)
 
     @api.onchange('partner_id')
     def onchange_partner_id(self):
