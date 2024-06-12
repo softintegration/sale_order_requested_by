@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-24 10:30+0000\n"
-"PO-Revision-Date: 2023-07-24 10:30+0000\n"
+"POT-Creation-Date: 2024-06-12 13:28+0000\n"
+"PO-Revision-Date: 2024-06-12 13:28+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -19,6 +19,17 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sale_order_requested_by.report_invoice_document_inherit
 msgid "<strong>Requested by:</strong>"
 msgstr "<strong>Demandée par:</strong>"
+
+#. module: sale_order_requested_by
+#: code:addons/sale_order_requested_by/models/res_partner.py:0
+#, python-format
+msgid "Can not remove a Partner related to Sale Order(s)/Account move(s)!"
+msgstr "Impossible de supprimer un contact lié à un Bon de commande de vente/Facture!"
+
+#. module: sale_order_requested_by
+#: model:ir.model,name:sale_order_requested_by.model_res_partner
+msgid "Contact"
+msgstr "Contact"
 
 #. module: sale_order_requested_by
 #: model:ir.model,name:sale_order_requested_by.model_account_move

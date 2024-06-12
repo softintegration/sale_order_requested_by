@@ -8,7 +8,7 @@ class AccountMove(models.Model):
     _inherit = "account.move"
 
     requested_by_id = fields.Many2one('res.partner', 'Requested by', readonly=True, copy=False,
-                                      states={'draft': [('readonly', False)]})
+                                      states={'draft': [('readonly', False)]},ondelete='restrict')
 
     @api.onchange('partner_id')
     def _onchange_partner_id(self):
